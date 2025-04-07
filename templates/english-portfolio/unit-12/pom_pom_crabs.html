@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}Pom Pom Crabs{% endblock %}
+
+{% block content %}
+<div class="back-nav">
+    <a href="{{ url_for('english_portfolio') }}" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to English Portfolio
+    </a>
+</div>
+
+<section class="portfolio-hero">
+    <div class="container">
+        <h1 class="section-title" style="padding-top: 6%;">Pom Pom Crabs</h1>
+    </div>
+</section>
+
+<section class="">
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/english-portfolio/pom-pom-crabs.jpeg') }}" alt="Pom Pom Crabs" class="img-fluid" style="width: 50%; height: 350px; margin: 0 auto; display: block; border-radius: 10px; padding-bottom: 30px;">
+        <p style="max-width: 62%; margin: auto auto; font-size: 1.1rem;">This teeny-tiny crab is commonly known as pom pom crab or boxer crab. This Indo-Pacific aquatic creature gets its name from its habit of carrying sea anemones in each of its claws and waving it at  predators as a sign of danger, which causes it to look like a cheerleader with pom poms in a boxing game. Interestingly, their eye-catching look and unique habit make them an economical yet decorative and multi-functional choice for marine aquarium enthusiasts. In fact, pom pom crabs feed on algae and small invertebrates, helping clean leftover food from fish, improving the water quality. Moreover, these crabs are known to be “reef safe” - a distinction used to indicate that a species is safe to add to a reef aquarium. In fact, they maintain mutualistic bonds with sea anemones; the anemones help protect the crab while benefiting from boxer crabs’ food scraps.</p>
+    </div>
+</section>
+
+<style>
+    .back-nav {
+        position: absolute;
+        top: 12.5%;
+        left: 11.5%;
+        z-index: 10;
+    }
+
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+        color: #6c63ff;
+    }
+
+    .back-link i {
+        font-size: 0.9rem;
+    }
+</style>
+{% endblock %}
